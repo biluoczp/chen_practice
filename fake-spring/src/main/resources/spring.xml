@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+
+    <bean id="dao" class="fake.spring.dao.ChenDaoImpl"></bean>
+
+    <bean id="service" class="fake.spring.service.ChenServiceImpl">
+        <property id="dao" ref="dao"/>
+    </bean>
+
+</beans>
