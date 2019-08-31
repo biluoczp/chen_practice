@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chen.mapper.TestMapper">
+    <resultMap id="BaseResultMap" type="com.chen.entity.TextDO">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="value" jdbcType="LONGVARCHAR" property="value"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id,
+        <include refid="cols_exclude_id"/>
+    </sql>
+
+    <sql id="cols_exclude_id">
+      value
+    </sql>
+
+    <sql id="vals">
+        #{value}
+    </sql>
+
+    <sql id="tb">
+        config_text
+    </sql>
+
+    <select id="load" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from
+        <include refid="tb"/>
+        where id = #{id}
+    </select>
+
+
+</mapper>

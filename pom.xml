@@ -11,6 +11,7 @@
     <modules>
         <module>chen-proxy</module>
         <module>fake-spring</module>
+        <module>spring-extend</module>
     </modules>
 
 

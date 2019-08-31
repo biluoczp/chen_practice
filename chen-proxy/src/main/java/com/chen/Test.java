@@ -1,7 +1,7 @@
 package com.chen;
 
-import com.chen.dao.ChenDao;
-import com.chen.dao.ChenDaoImpl;
+import com.chen.mapper.ChenDao;
+import com.chen.mapper.ChenDaoImpl;
 import com.chen.handler.ChenHandler;
 
 import java.lang.reflect.Proxy;

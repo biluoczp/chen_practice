@@ -1,7 +1,6 @@
 package com.chen.util;
 
-import com.chen.dao.ChenDaoImpl;
-import com.sun.tools.javah.LLNI;
+import com.chen.mapper.ChenDaoImpl;
 
 import javax.tools.JavaCompiler;
 import javax.tools.StandardJavaFileManager;

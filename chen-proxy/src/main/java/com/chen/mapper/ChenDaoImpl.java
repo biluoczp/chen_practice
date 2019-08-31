@@ -1,6 +1,4 @@
-package com.chen.dao;
-
-import com.chen.dao.ChenDao;
+package com.chen.mapper;
 
 /**
  * @author chenzepeng

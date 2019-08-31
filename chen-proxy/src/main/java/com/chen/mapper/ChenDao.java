@@ -1,4 +1,4 @@
-package com.chen.dao;
+package com.chen.mapper;
 
 /**
  * @author chenzepeng
