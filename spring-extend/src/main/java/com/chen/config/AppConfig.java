@@ -1,20 +1,13 @@
 package com.chen.config;
 
-import com.chen.util.MyImportBeanDefinitionRegistrar;
-import com.chen.util.MyImportSelector;
-import org.apache.ibatis.datasource.unpooled.UnpooledDataSource;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.SqlSessionTemplate;
+import com.chen.extend.MyImportBeanDefinitionRegistrar;
+import com.chen.extend.MyImportSelector;
+import com.chen.service.TestService;
+import com.chen.service.TestService2;
+import com.chen.service.TestService3;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-
-import javax.sql.DataSource;
+import org.springframework.context.annotation.*;
+import org.springframework.stereotype.Component;
 
 /**
  * @author chenzepeng
@@ -23,9 +16,26 @@ import javax.sql.DataSource;
 @Configuration
 //@MapperScan(basePackages = "com.chen.mapper")
 //@Import(MyImportSelector.class)
-@Import(MyImportBeanDefinitionRegistrar.class)
+//@Import(MyImportBeanDefinitionRegistrar.class)
 @ComponentScan(basePackages ="com.chen")
+//    @Import(TestService2.class)
+//@EnableAspectJAutoProxy
+//@Component
 public class AppConfig {
+
+//    @Bean
+//    public TestService testService(){
+//        return new TestService();
+//    }
+//
+//    @Bean
+//    public TestService3 testService3(){
+//        testService();
+//        return new TestService3();
+//    }
+
+}
+
 
 //    @Bean
 //    public DataSource druidDataSource() {
@@ -51,4 +61,3 @@ public class AppConfig {
 //    public DataSourceTransactionManager createTransactionManager(DataSource dataSource) {
 //        return new DataSourceTransactionManager(dataSource);
 //    }
-}

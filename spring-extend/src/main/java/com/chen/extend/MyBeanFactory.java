@@ -1,4 +1,4 @@
-package com.chen.util;
+package com.chen.extend;
 
 import com.chen.service.TestService;
 import org.springframework.beans.BeansException;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @author chenzepeng
  * @date 2019-08-29
  */
-@Component
+//@Component
 public class MyBeanFactory implements BeanFactoryPostProcessor {
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {

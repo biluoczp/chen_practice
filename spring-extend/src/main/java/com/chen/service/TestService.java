@@ -6,6 +6,10 @@ package com.chen.service;
  */
 public class TestService {
 
+    public TestService(){
+        System.out.println("test init...");
+    }
+
     public void test(){
         System.out.println("hello, world");
     }

@@ -1,4 +1,4 @@
-package com.chen.util;
+package com.chen.extend;
 
 import com.chen.service.TestService;
 import org.springframework.context.annotation.ImportSelector;
